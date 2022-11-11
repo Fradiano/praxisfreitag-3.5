@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var TVReiseZiele: UITableView!
     
-    var zuBesuchen: [String] = []
+    var zuBesuchen: [String] = ["käse"]
     var besucht: [String] = []
     
     override func viewDidLoad() {
