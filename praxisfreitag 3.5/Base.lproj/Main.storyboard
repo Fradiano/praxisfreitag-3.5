@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="praxisfreitag_3_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oE6-SK-dbM">
+                                <rect key="frame" x="0.0" y="102.66666666666669" width="390" height="651.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="zieleCell" id="esR-ar-vfV">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="esR-ar-vfV" id="laN-WP-k06">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtl-cq-u2t">
+                                <rect key="frame" x="325" y="62" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Mwf-Xi-bsl"/>
+                                    <constraint firstAttribute="height" constant="50" id="joY-JX-huf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="hinzufuegen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxz-k4-wRO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHc-m9-jsI">
+                                <rect key="frame" x="170" y="774" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ACh-sR-Wtm"/>
+                                    <constraint firstAttribute="width" constant="50" id="EUN-Yz-PKM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="trash.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deine Reiseziele" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8I-Fz-t3D">
+                                <rect key="frame" x="40" y="62" width="198" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gtl-cq-u2t" secondAttribute="trailing" constant="15" id="630-BH-qj8"/>
+                            <constraint firstItem="iHc-m9-jsI" firstAttribute="top" secondItem="oE6-SK-dbM" secondAttribute="bottom" constant="20" id="Bqn-DH-MoY"/>
+                            <constraint firstItem="j8I-Fz-t3D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="SBS-9P-f3o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oE6-SK-dbM" secondAttribute="trailing" id="Uiw-qk-OX8"/>
+                            <constraint firstItem="oE6-SK-dbM" firstAttribute="top" secondItem="j8I-Fz-t3D" secondAttribute="bottom" constant="7" id="WPJ-Ct-9Du"/>
+                            <constraint firstItem="oE6-SK-dbM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XJL-bD-fs7"/>
+                            <constraint firstAttribute="bottom" secondItem="iHc-m9-jsI" secondAttribute="bottom" constant="20" id="cTK-L1-JPZ"/>
+                            <constraint firstItem="j8I-Fz-t3D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="f6r-Ml-M5v"/>
+                            <constraint firstItem="iHc-m9-jsI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tRi-fy-J5w"/>
+                            <constraint firstItem="Gtl-cq-u2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="veN-03-laU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TVReiseZiele" destination="oE6-SK-dbM" id="YF9-LH-RxS"/>
+                        <outlet property="deleteBtn" destination="iHc-m9-jsI" id="M3r-9p-zzG"/>
+                        <outlet property="plusBtn" destination="Gtl-cq-u2t" id="7pX-OZ-TZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.38461538461538" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="trash.fill" catalog="system" width="119" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
